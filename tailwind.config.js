@@ -13,7 +13,7 @@ export default {
   				'sans-serif'
   			],
   			robotoSlab: [
-  				'Roboto Slab"',
+  				'Roboto Slab',
   				'serif'
   			]
   		},
