@@ -58,12 +58,12 @@ function Home() {
             <img src={pointerr} alt="" className='pointer2 relative -left-[35vw] bottom-72 w-32' />
             <h4 className='whitespace-pre-wrap relative -top-24 text-center text-[#9d9d9d]'>I’m a UI/UX designer passionate about creating meaningful digital experiences. With a strong background in graphic design and a knack for problem-solving, I blend creativity with functionality to craft user-centric solutions.</h4>
           </div>
-        <iframe src='https://my.spline.design/iphone14procopy-c74830c4623d5d3d4fb54f99e2bd1bb6/' data-scroll data-scroll-speed="0" data-scroll-exclude className='phone3d w-[60vw] h-[90vh] -mt-36'></iframe>
-        <div className='flex gap-5 justify-center items-center -mt-20'>
-          <img src={pics} alt="" className='w-32'/>
-          <h1 className='font-pop text-2xl '>worked with more than 7 clients</h1>
-          <img src={thumb} alt="" className='-mt-7'/>
-        </div>
+          <iframe src='https://my.spline.design/iphone14procopy-c74830c4623d5d3d4fb54f99e2bd1bb6/' data-scroll data-scroll-speed="0" data-scroll-exclude className='phone3d w-[60vw] h-[90vh] -mt-36'></iframe>
+          <div className='flex gap-5 justify-center items-center -mt-20'>
+            <img src={pics} alt="" className='w-32'/>
+            <h1 className='font-pop text-2xl '>worked with more than 7 clients</h1>
+            <img src={thumb} alt="" className='-mt-7'/>
+          </div>
         </main>
         <Below />
     </div>

@@ -18,8 +18,8 @@
 }
 .copybutt2 {
     clip-path: inset(0px 0px 8% 0px);
-    -webkit-mask-image: linear-gradient(rgb(0 0 0/1),rgb(0 0 0/1) 70%,rgb(0 0 0/0) 90%);
-    mask-image: linear-gradient(rgb(0 0 0/1),rgb(0 0 0/1) 70%,rgb(0 0 0/0) 90%);
+    -webkit-mask-image: linear-gradient(rgb(0 0 0/1) 50%,rgb(0 0 0/0.7) 65%,rgb(0 0 0/0) 80%);
+    mask-image: linear-gradient(rgb(0 0 0/1) 50%,rgb(0 0 0/0.7) 65%,rgb(0 0 0/0) 80%);
 }
 
 .imagu1 {
@@ -106,4 +106,93 @@ body::-webkit-scrollbar {
   body {
     @apply bg-background text-foreground;
     }
+}
+
+
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -30px; /* gutter size offset */
+    width: auto;
+  }
+.my-masonry-grid_column {
+    padding-left: 30px; /* gutter size */
+    background-clip: padding-box;
+}
+  
+  /* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+    /* background: grey; */
+    margin-bottom: 30px;
+}
+
+.tilted-card-demo-text {
+    padding: 4px 6px;
+    background-color: rgba(211, 173, 241, 1);
+    border-radius: 8px;
+    color: rgb(55, 22, 87);
+}
+
+.iframe-container {
+    width: 90vw; /* 90% of viewport width */
+    height: calc(90vw * 2); /* Maintain aspect ratio (2:1) */
+    max-width: 280px; /* Maximum width for larger screens */
+    max-height: 631px; /* Maximum height for larger screens */
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background: white; /* Optional */
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .iframe-container iframe {
+      width: 135%;
+      height: 135%;
+      position: absolute;
+      top: -16%;
+      left: -17%;
+      border: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .iframe-container iframe {
+      width: 103%;
+      height: 123%;
+      position: absolute;
+      top: -9%;
+      left: -1.5%;
+      border: none;
+  }
+}
+
+/* Medium screens between 600px and 1200px */
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  .iframe-container iframe {
+      width: 120%;
+      height: 130%;
+      position: absolute;
+      top: -12%;
+      left: -10%;
+      border: none;
+  }
+}
+
+.iframe-container {
+  width: 95vw; /* Use most of the screen width */
+  height: calc(95vw * 2); /* Adjust height for aspect ratio */
+}
+
+
+.phoneframe {
+    display: flex;
+    width: 17.95rem;
+    height: 37.85rem;
+    border-width: 4px;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 3.2px 3.2px 3.8px rgba(0, 0, 0, 0.014), 7.7px 7.7px 8.1px rgba(0, 0, 0, 0.021), 14.5px 14.5px 13.5px rgba(0, 0, 0, 0.026), 25.9px 25.9px 21.1px rgba(0, 0, 0, 0.033), 48.2px 48.2px 34.7px rgba(0, 0, 0, 0.043), 100px 100px 80px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
 }
